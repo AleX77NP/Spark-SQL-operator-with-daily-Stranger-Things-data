@@ -1,0 +1,14 @@
+__pycache__/
+venv/
+.idea/
+.vscode/
+drivers/
+customer_analysis.db
+airflow.db
+airflow.cfg
+airflow-webserver.pid
+webserver_config.py
+logs/
+derby.log
+metastore_db/
+spark-warehouse/
