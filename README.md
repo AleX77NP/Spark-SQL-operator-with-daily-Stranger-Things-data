@@ -8,16 +8,16 @@ https://medium.com/@sarfarazhussain211/metastore-in-apache-spark-9286097180a4
 
 ## Example
 
-In this example we use Spark SQL operator to insert and read data od daily basis.
-We will use Stranger Things API (that's right, Netflix fans!) to fetch a random quote per day and insert it in Hive Metastore. 
+In this example we use Spark SQL operator to insert and read data on daily basis.
+We will use Stranger Things API (that's right, Netflix and ST fans!) to fetch random quote per day and insert it in Hive Metastore. 
 
 Every quote has two fileds - author and quote (text). Author can have more than one quote associated with him.
 
 For this to work, we need two DAGs (you can find them in `dags/` directory):
-1. `db_setup` - to create database and quotes table
+1. `db_setup` - to create database and quotes table (this dag is triggered only once)
 2. `pipeline` - to fetch quote, insert it and show how many quotes every author has
 
-Notice `PARTITIONED BY` clause in our sql statement for creating table (`db_setup.py`). This is a handy Hive feature that lets us choose how data is partitioned on the disk. In this case, we partition by author, since many quotes are bound to one author.
+Notice `PARTITIONED BY` clause in our SQL statement for creating table (`db_setup.py`). This is a handy Hive feature that lets us choose how data is partitioned on the disk. In this case, we partition by author, since many quotes are bound to one author.
 
 `CREATE TABLE stranger_things.quotes (quote STRING) PARTITIONED BY(author STRING)`
 
