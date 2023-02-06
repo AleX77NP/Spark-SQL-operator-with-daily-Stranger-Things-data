@@ -45,4 +45,5 @@ If you go to Airflow and check DAG logs, you should see something like this:
 
 [2023-02-06, 14:51:41 UTC] {spark_sql.py:177} INFO - 1	Will Byers
 
-[2023-02-06, 14:51:41 UTC] {spark_sql.py:177} INFO - 2	Dustin Henderson```
+[2023-02-06, 14:51:41 UTC] {spark_sql.py:177} INFO - 2	Dustin Henderson
+```
