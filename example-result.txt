@@ -1,0 +1,9 @@
+[2023-02-06, 14:51:41 UTC] {spark_sql.py:177} INFO - 1	Kali Prasad
+
+[2023-02-06, 14:51:41 UTC] {spark_sql.py:177} INFO - 1	Eleven
+
+[2023-02-06, 14:51:41 UTC] {spark_sql.py:177} INFO - 1	Lucas Sinclair
+
+[2023-02-06, 14:51:41 UTC] {spark_sql.py:177} INFO - 1	Will Byers
+
+[2023-02-06, 14:51:41 UTC] {spark_sql.py:177} INFO - 2	Dustin Henderson

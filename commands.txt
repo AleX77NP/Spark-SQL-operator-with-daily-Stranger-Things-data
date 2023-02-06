@@ -1,7 +1,0 @@
-export PYTHONPATH=$(pwd)/:$(pwd)/config
-
-export AIRFLOW_HOME=$(pwd)
-airflow db init
-airflow users create
-airflow scheduler
-airflow webserver

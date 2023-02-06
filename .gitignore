@@ -12,3 +12,4 @@ logs/
 derby.log
 metastore_db/
 spark-warehouse/
+commands.txt
