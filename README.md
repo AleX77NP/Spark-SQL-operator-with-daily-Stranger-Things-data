@@ -4,7 +4,7 @@ Spark SQL Operator is a really cool tool when used correctly. It makes writing S
 queries against Hive Metastore look pretty and clean.
 
 If you wanna learn more about Spark and Hive connection, I suggest reading this article:
-https://medium.com/@sarfarazhussain211/metastore-in-apache-spark-9286097180a4
+https://medium.com/@joyo.development/legendary-sparksql-operator-bf9a38f5bb1e
 
 ## Example
 
