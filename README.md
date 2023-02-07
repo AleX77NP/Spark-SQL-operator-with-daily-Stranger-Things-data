@@ -28,7 +28,7 @@ After that, we run another SQL query to get number of quotes for each author.
     VALUES ("{quote['quote']}")`
 
 
-`SELECT COUNT(quote), author FROM stranger_things.quotes GROUP BY author`
+`SELECT COUNT(DISTINCT quote), author FROM stranger_things.quotes GROUP BY author`
 
 Both of these queries are run using Spark SQL operator. With this, we don't have to worry about
 complex configuration - we only need to pass SQL string that represents query and master field (local in this case).

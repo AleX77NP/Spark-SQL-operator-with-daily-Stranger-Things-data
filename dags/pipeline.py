@@ -28,7 +28,7 @@ quotes_job = SparkSqlOperator(
 )
 
 quotes_count_job = SparkSqlOperator(
-    sql="SELECT COUNT(quote), author FROM stranger_things.quotes GROUP BY author",
+    sql="SELECT COUNT(DISTINCT quote), author FROM stranger_things.quotes GROUP BY author",
     master="local",
     task_id="quotes_count_job",
     dag=dag,
